@@ -15,8 +15,9 @@ class Mobile extends Gadget {
       }
 }
 class Laptop extends Gadget {
-      constructor(name) {
+      constructor(name, price) {
             super(name)
+            this.price = price
       }
       review() {
             return `${this.name} was my First Laptop`
@@ -25,6 +26,6 @@ class Laptop extends Gadget {
 
 
 const samsung = new Mobile("samsung", "A50", 200000)
-const dell = new Laptop("dell")
+const dell = new Laptop("dell", 50000)
 console.log(samsung.review())
-console.log(dell.review())
+console.log(dell.price)
