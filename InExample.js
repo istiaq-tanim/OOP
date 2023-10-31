@@ -24,7 +24,6 @@ class Laptop extends Gadget {
       }
 }
 
-
 const samsung = new Mobile("samsung", "A50", 200000)
 const dell = new Laptop("dell", 50000)
 console.log(samsung.review())
